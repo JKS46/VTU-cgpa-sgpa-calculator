@@ -9,3 +9,4 @@
 - [ ] cgpa,sgpa result border error
 - [ ] load in new page?
 - [ ] add a button to clear all data
+- [ ] add enter button enabled calclate
