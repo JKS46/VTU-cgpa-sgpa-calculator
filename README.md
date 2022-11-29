@@ -1,3 +1,1 @@
-# Boiler-plate
-
-Starting template for basic web page
+# VTU - SGPA and CGPA calculator for 2018 scheme ECE branch
