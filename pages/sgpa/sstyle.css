@@ -7,11 +7,53 @@
 body{
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
+    margin: 15px;
 }
 main{
     margin: 0 0 35px;
+}
+input,select{
+    height: 22px;
+    margin: 13px;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 15px;
+    display: block;
+}
+button{
+    border: 3px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    width: 100px;
+    font-size: larger;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 0 20px;
+}
+select{
+    height: 28px;
+    padding: 1px;
+    width: 60px;
+}
+#add{
+    width: auto;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin: 0 40% 0;
+}
+#sgpa{
+    flex:1;
+    margin:0 25px 0;
+    font-size: 20px;
 }
 footer{
     position: fixed;

@@ -10,10 +10,91 @@
 </head>
 <body>
     <header>
-
+        <h1 style="color:red;">SGPA Calculator</h1>
+        <h3 style="color:orange;">Note: If you cleared backlogs of previous semesters and got the results now,you should add those subjects to this SGPA.</h3>
     </header>
     <main>
-
+        <!-- add details tag here -->
+        <!-- consider tables -->
+        <div class="container">
+            <div class="subjects">
+                <h4>Subjects</h4>
+                <p>Subject 1</p>
+                <hr>
+                <p>Subject 2</p>
+                <hr>
+                <p>Subject 3</p>
+                <hr>
+                <p>Subject 4</p>
+                <hr>
+                <p>Subject 5</p>
+                <hr>
+            </div>
+            <div class="credits">
+                <h4>Credits</h4>
+                <input type="number" id="credit1" min="1" max="10" value="0">
+                <hr>
+                <input type="number" id="credit2" min="1" max="10" value="0">
+                <hr>
+                <input type="number" id="credit3" min="1" max="10" value="0">
+                <hr>
+                <input type="number" id="credit4" min="1" max="10" value="0">
+                <hr>
+                <input type="number" id="credit5" min="1" max="10" value="0">
+                <hr>
+            </div>
+            <div class="marks">
+                <h4>Marks</h4>
+                <input type="number" id="mark1" min="0" max="100" value="0">
+                <hr>
+                <input type="number" id="mark2" min="0" max="100" value="0">
+                <hr>
+                <input type="number" id="mark3" min="0" max="100" value="0">
+                <hr>
+                <input type="number" id="mark4" min="0" max="100" value="0">
+                <hr>
+                <input type="number" id="mark5" min="0" max="100" value="0">
+                <hr>
+            </div>
+            <div class="outcome">
+                <h4>Choose</h4>
+                <select id="result1">
+                    <option value="1">Pass</option>
+                    <option value="0">Fail</option>
+                </select>
+                <hr>
+                <select id="result2">
+                    <option value="1">Pass</option>
+                    <option value="0">Fail</option>
+                </select>
+                <hr>
+                <select id="result3">
+                    <option value="1">Pass</option>
+                    <option value="0">Fail</option>
+                </select>
+                <hr>
+                <select id="result4">
+                    <option value="1">Pass</option>
+                    <option value="0">Fail</option>
+                </select>
+                <hr>
+                <select id="result5">
+                    <option value="1">Pass</option>
+                    <option value="0">Fail</option>
+                </select>
+                <hr>
+            </div>
+        </div>
+        <button id="add">Add another subject</button>
+        <br>
+        <button id="calculate">Calculate</button>
+        <div class="result">
+            <h3 style="margin-left:10px;">SGPA</h3>
+            <h3 id="sgpa">0</h3>
+        </div>
+        <h4 style="color:orange;">
+        Reload the page to calculate for another semester.
+        </h4>
     </main>
     <footer>
         <div>
