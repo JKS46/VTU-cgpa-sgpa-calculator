@@ -5,17 +5,13 @@
     font-family: "Comic Sans MS",Arial,'Times New Roman', Times, serif,sans-serif;
 }
 body{
-    margin: 20px; 
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 main{
-    flex: 1;
-    margin:35px;
-}
-a{
-    color: red;
-    margin: 30px;
+    margin: 0 0 35px;
 }
 footer{
     position: fixed;
