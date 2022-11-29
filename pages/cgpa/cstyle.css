@@ -7,6 +7,7 @@
 body{
     display: flex;
     flex-direction: column;
+    margin: 15px;
 }
 h3{
     display: inline;
@@ -29,6 +30,20 @@ button{
     border-radius: 5px;
     margin: 20px;
     width: 100px;
+    font-size: larger;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin: 0 40% 0;
+}
+#cgpa{
+    flex:1;
+    margin:0 25px 0;
+    font-size: 20px;
 }
 footer{
     position: fixed;
