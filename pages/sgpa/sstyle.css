@@ -50,7 +50,7 @@ select{
 }
 .result{
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
     margin: 0 40% 0;
 }
@@ -58,7 +58,6 @@ h3{
     color: aqua;
 }
 #sgpa{
-    flex:1;
     margin:0 25px 0;
     font-size: 20px;
     color: red;

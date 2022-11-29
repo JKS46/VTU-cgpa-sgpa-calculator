@@ -6,5 +6,5 @@
 - [ ] load cgpa page after calculating sgpa
 - [ ] pop media query for mobile
 - [ ] load in new page?
-- [ ] add a button to clear all data
 - [ ] add enter button enabled calculate
+- [ ] add a button to reset all data
