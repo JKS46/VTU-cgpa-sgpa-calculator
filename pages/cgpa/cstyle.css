@@ -36,14 +36,15 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid red;
-    border-radius: 5px;
     margin: 0 40% 0;
 }
+.result h3{
+    color : aqua;
+}
 #cgpa{
-    flex:1;
     margin:0 25px 0;
     font-size: 20px;
+    color: red;
 }
 footer{
     position: fixed;
