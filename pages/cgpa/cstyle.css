@@ -7,11 +7,28 @@
 body{
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
+}
+h3{
+    display: inline;
 }
 main{
     margin: 0 0 35px;
+}
+.sem{
+    margin: 35px;
+}
+input{
+    margin: 10px 10px 10px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 15px;
+}
+button{
+    border: 3px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    width: 100px;
 }
 footer{
     position: fixed;

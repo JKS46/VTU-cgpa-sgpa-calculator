@@ -4,20 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="cstyle.css">
+    <script src="cscript.js" defer></script>
     <title>CGPA</title>
 </head>
 <body>
     <header>
-        <h1>CGPA Calculator</h1>
+        <h1 style="color:red;">CGPA Calculator</h1>
         <h3>Enter the SGPA of each semester below and 0 for the ones you don't know the result of</h3>
     </header>
     <main>
         <div class="sem">
-            <h2>Semester 1</h2>
-            <input type="number" id="sem1" min="0" max="10" default="0">
-            
+            <h3>Semester 1</h3>
+            <input type="number" id="sem1" min="0" max="10" value="0">
+            <br>
+            <h3>Semester 2</h3>
+            <input type="number" id="sem2" min="0" max="10" value="0">
+            <br>
+            <h3>Semester 3</h3>
+            <input type="number" id="sem3" min="0" max="10" value="0">
+            <br>
+            <h3>Semester 4</h3>
+            <input type="number" id="sem4" min="0" max="10" value="0">
+            <br>
+            <h3>Semester 5</h3>
+            <input type="number" id="sem5" min="0" max="10" value="0">
+            <br>
+            <h3>Semester 6</h3>
+            <input type="number" id="sem6" min="0" max="10" value="0">
+            <br>
+            <h3>Semester 7</h3>
+            <input type="number" id="sem7" min="0" max="10" value="0">
+            <br>
+            <h3>Semester 8</h3>
+            <input type="number" id="sem8" min="0" max="10" value="0">
+        </div>
+        <div class="calculate">
+            <button id="calculate">Calculate</button>
+        </div>
+        <div class="result">
+            <h3>CGPA</h3>
+            <h3 id="cgpa">0</h3>
         </div>
     </main>
     <footer>
