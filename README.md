@@ -1,4 +1,4 @@
-# VTU - SGPA and CGPA calculator for 2018 scheme ECE branch
+# VTU - SGPA and CGPA calculator for 2018/2017 scheme B.E/B.Tech students
 
 ### To Do
 
