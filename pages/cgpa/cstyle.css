@@ -9,17 +9,20 @@ body{
     flex-direction: column;
     margin: 15px;
 }
-h3{
-    display: inline;
-}
 main{
     margin: 0 0 35px;
 }
-.sem{
-    margin: 35px;
+table{
+    margin: auto;
+}
+th,td{
+    padding: 5px;
+}
+th h3{
+    color: red;
 }
 input{
-    margin: 10px 10px 10px 30px;
+    margin: 10px;
     border: 2px solid white;
     border-radius: 5px;
     width: 80px;
@@ -28,7 +31,7 @@ input{
 button{
     border: 3px solid white;
     border-radius: 5px;
-    margin: 20px;
+    margin: auto;
     width: 100px;
     font-size: larger;
 }
@@ -36,7 +39,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 40% 0;
+    margin: 10px;
 }
 .result h3{
     color : aqua;
