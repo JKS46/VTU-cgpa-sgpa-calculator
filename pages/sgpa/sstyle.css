@@ -48,18 +48,18 @@ select{
 #add{
     width: auto;
 }
-.result{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin: 0 40% 0;
+table{
+    border: 3px solid white;
+    border-radius: 5px;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: large;
 }
-h3{
-    color: aqua;
+th,td{
+    border: 2px solid white;
+    padding: 5px;
 }
-#sgpa{
-    margin:0 25px 0;
-    font-size: 20px;
+.makeRed{
     color: red;
 }
 footer{

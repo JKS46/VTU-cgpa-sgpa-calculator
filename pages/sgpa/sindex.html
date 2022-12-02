@@ -12,10 +12,9 @@
     <header>
         <h1 style="color:red;">SGPA Calculator</h1>
         <h3 style="color:orange;">Note: If you cleared backlogs of previous semesters and got the results now,you should add those subjects to this SGPA.</h3>
+        <h4>Marks: Enter marks out of 100 which includes both external and internal marks</h4>
     </header>
     <main>
-        <!-- add details tag here -->
-        <!-- consider tables -->
         <div class="container">
             <div class="subjects">
                 <h4>Subjects</h4>
@@ -88,10 +87,28 @@
         <button id="add">Add another subject</button>
         <br>
         <button id="calculate">Calculate</button>
-        <div class="result">
-            <h3>SGPA</h3>
-            <h3 id="sgpa">0</h3>
-        </div>
+        <table class="result">
+            <tr>
+                <th colspan="2">Results</th>
+            </tr>
+            <tr>
+                <td>Registered Credits</td>
+                <td id="regCredits">¯\_(ツ)_/¯</td>
+            </tr>
+            <tr>
+                <td class="makeRed">Earned Credits</td>
+                <td class="makeRed" id="earnedCredits">¯\_(ツ)_/¯</td>
+            </tr>
+            <tr>
+                <td class="makeRed">CiGi</td>
+                <td class="makeRed" id="CG">¯\_(ツ)_/¯</td>
+            </tr>
+            <tr>
+                <td>SGPA</td>
+                <td id="sgpa">¯\_(ツ)_/¯</td>
+            </tr>
+        </table>
+        <p>Note down the results that are marked in red</p>
         <h4 style="color:orange;">
         Reload the page to calculate for another semester.
         </h4>

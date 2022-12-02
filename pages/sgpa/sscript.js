@@ -1,6 +1,9 @@
 const sgpa = document.getElementById("sgpa");
 const calculate = document.getElementById("calculate");
 const add = document.getElementById("add");
+const CG = document.getElementById("CG");
+const earnedCredits = document.getElementById("earnedCredits");
+const regCredits = document.getElementById("regCredits");
 
 let marks = [];
 let credits = [];
@@ -47,20 +50,67 @@ function addSubject() {
 
 calculate.addEventListener("click", function () {
     add.removeEventListener("click", addSubject);
-    for(let i = 1; i <= totalSubjects; i++) {
-        marks[i] = document.getElementById("mark" + i).value;
-        credits[i] = document.getElementById("credit" + i).value;
-        outcome[i] = document.getElementById("result" + i).value;
-        console.log(marks[i]);
-    }
-    console.log(marks, credits, outcome);
-    let total = 0;
+
     let totalCredits = 0;
-    /* for (let i = 1; i <= totalSubjects; i++) {
-        outcome[i].textContent = marks[i].value * credits[i].value;
-        total += parseFloat(outcome[i].textContent);
-        totalCredits += parseFloat(credits[i].value);
+    let CiGi = 0;
+    let actualCredits = 0;
+
+    for(let i = 1; i <= totalSubjects; i++) {
+
+        marks[i] = parseInt(document.getElementById("mark" + i).value);
+        credits[i] = parseInt(document.getElementById("credit" + i).value);
+        outcome[i] = parseInt(document.getElementById("result" + i).value);
+
+        if(credits[i] == 0) {
+            alert("Zero credits are not allowed for subject "+i);
+            return;
+        }
+        if(marks[i]<0 || credits[i]<0) {
+            alert("Negative value error in subject "+i);
+            return;
+        }
+        if(marks[i]<40 && outcome[i] == 1) {
+            alert("Marks of subject "+i+" is less than 40,which is considered as Fail. Change the outcome to continue");
+            return;
+        }
+        else if(marks[i]>100){
+            alert("Marks of subject "+i+"is greater than 100,which is not possible. Change the marks to continue");
+            return;
+        }
+        if(marks[i]>=90) {
+            marks[i] = 10;
+        }
+        else if(marks[i]>=80 && marks[i]<90) {
+            marks[i] = 9;
+        }
+        else if(marks[i]>=70 && marks[i]<80) {
+            marks[i] = 8;
+        }
+        else if(marks[i]>=60 && marks[i]<70) {
+            marks[i] = 7;
+        }
+        else if(marks[i]>=45 && marks[i]<60) {
+            marks[i] = 6;
+        }
+        else if(marks[i]>=40 && marks[i]<45) {
+            marks[i] = 4;
+        }
+        
+        totalCredits += credits[i];
+
+        if(outcome[i] == 0) {
+            marks[i] = 0;
+            credits[i] = 0;
+        }
+
+        CiGi += marks[i]*credits[i];
+        actualCredits += credits[i];
     }
-    sgpa.textContent = total/totalCredits; */
+    console.log(marks, credits, outcome," marks, credits, outcome");
+
+    regCredits.textContent = totalCredits;
+    CG.textContent = CiGi;
+    earnedCredits.textContent = actualCredits;
+    sgpa.textContent = (CiGi/totalCredits).toFixed(2);
 });
 
